@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monda', sans-serif;
+}
+
+:root{
+    --Color-menu: #333;
+    --color-header-h1: #232d60;
+    --color-header-p: #6a7199;
+    --bg-boton-header1: #2d54fd;
+    --bg-boton-header2: #32de84;
+    --color-boton-header: #fff;
+    --color-social-link: #6a7199;
+
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/background2.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--Color-menu);
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    font-weight: 700;
+}
+.cart{
+    width: 40px;
+    cursor: pointer;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, var(--bg-boton-header1), var(--bg-boton-header2) );
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--color-boton-header);
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+}
+.content h1{
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-top: 34px;
+    margin-bottom: 15px;
+    color: var(--color-header-h1);
+}
+.content p{
+    font-size: 20px;
+    color: var(--color-header-p);
+}
+.arrow-icons{
+    margin-top: 40px;
+    display: flex;
+}
+.arrow-icons img{
+    width: 50px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.feature-img{
+    height: 75%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+}
+.social-links{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+}
+.social-links a{
+    text-decoration: none;
+    color: var(--color-social-link);
+    padding-right: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.social-links a:hover{
+    font-weight: 700;
+}
